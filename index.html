@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for generating charts -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Expense Tracker</h1>
+        </header>
+
+        <!-- Expense Form -->
+        <form id="expenseForm">
+            <input type="number" id="amount" placeholder="Amount" required>
+            <input type="text" id="category" placeholder="Category" required>
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="date" id="date" required>
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <!-- Sort and Filter Section -->
+        <div class="filters">
+            <h2>Sort Expenses</h2>
+            <select id="sortBy">
+                <option value="category">Category</option>
+                <option value="amount">Amount</option>
+                <option value="date">Date</option>
+            </select>
+            <button id="sortButton">Sort</button>
+        </div>
+
+        <ul id="expenseList"></ul>
+
+        <div class="controls">
+            <button id="undoButton" onclick="undoExpense()">Undo</button>
+            <button id="redoButton" onclick="redoExpense()">Redo</button>
+        </div>
+
+        <h2>Expense Chart</h2>
+        <canvas id="expenseChart"></canvas>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
