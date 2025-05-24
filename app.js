@@ -56,6 +56,22 @@ document.getElementById("expenseForm").addEventListener("submit", function(event
     // Reset the form fields
     document.getElementById("expenseForm").reset();
 });
+// Sort expenses based on the selected criterion
+document.getElementById("sortButton").addEventListener("click", function() {
+    const sortBy = document.getElementById("sortBy").value;
+
+    // Sorting logic
+    if (sortBy === "category") {
+        expenses.sort((a, b) => a.category.localeCompare(b.category));
+    } else if (sortBy === "amount") {
+        expenses.sort((a, b) => a.amount - b.amount);
+    } else if (sortBy === "date") {
+        expenses.sort((a, b) => new Date(a.date) - new Date(b.date));
+    }
+
+    // Re-render the sorted expense list
+    renderExpenseList();
+});
 
 // Function to update the chart
 function updateChart() {
