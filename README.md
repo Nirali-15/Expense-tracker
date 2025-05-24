@@ -1,7 +1,7 @@
 A smart expense tracker that uses Stack, Queue, and Sorting algorithms to manage and analyze spending. Visualizes data through graphs for clear financial insights and trend tracking.
 
-![Overview](Tracker.png)
+![Overview](Output_Screenshots/Tracker.png)
 
-![Add_Remove_Expenses](Add_remove.png)
+![Add_Remove_Expenses](Output_Screenshots/Add_remove.png)
 
-![Graph](Graph.png)
+![Graph](Output_Screenshots/Graph.png)
