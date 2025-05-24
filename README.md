@@ -2,6 +2,6 @@ A smart expense tracker that uses Stack, Queue, and Sorting algorithms to manage
 
 ![Overview](Output_Screenshots/Tracker.png)
 
-![Add_Remove_Expenses](Output_Screenshots/Add_remove.png)
+![Add_Remove_Expenses](Output_Screenshots/Add_Remove.png)
 
 ![Graph](Output_Screenshots/Graph.png)
